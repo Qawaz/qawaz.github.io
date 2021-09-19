@@ -7,7 +7,7 @@ export default function WebFonts() {
             <link rel="preconnect" href="https://fonts.googleapis.com"/>
             <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin={"anonymous"} />
             <link
-                href="https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway:wght@300&family=Roboto&display=swap"
+                href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Roboto&display=swap"
                 rel="stylesheet"/>
         </Helmet>
     )
