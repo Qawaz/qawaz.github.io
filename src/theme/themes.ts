@@ -9,13 +9,13 @@ export const light: ThemeOptions = {
     palette: {
         type: "light",
         primary: {
-            light: "rgba(255, 177, 0, 1)",
-            main: "rgba(236, 119, 22, 1)",
-            dark: "rgba(235, 99, 25, 1)",
+            light: "#003147",
+            main: "#003147",
+            dark: "#00293b",
         },
         secondary: {
             light: "rgba(224, 130, 96, 1)",
-            main: "rgba(184, 110, 84, 1)",
+            main: "#F68054",
             dark: "rgba(148, 89, 69, 1)",
         },
     },
@@ -25,13 +25,13 @@ export const dark: ThemeOptions = {
     palette: {
         type: "dark",
         primary: {
-            light: "rgba(255, 177, 0, 1)",
-            "main": "rgba(236, 119, 22, 1)",
-            "dark": "rgba(235, 99, 25, 1)",
+            light: "#005980",
+            main: "#003147",
+            dark: "#00293b",
         },
         secondary: {
             light: "rgba(224, 130, 96, 1)",
-            main: "rgba(184, 110, 84, 1)",
+            main: "#F68054",
             dark: "rgba(148, 89, 69, 1)",
         },
     },
