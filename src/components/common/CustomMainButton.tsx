@@ -15,6 +15,7 @@ export const CustomMainButton = styled.button`
   align-items:center;
   cursor:pointer;
   margin:0.5em;
+  background : ${props=> props.theme.palette.primary.main};
   &:hover{
     opacity:1;
   }

@@ -19,6 +19,17 @@ export const light: ThemeOptions = {
             dark: "rgba(148, 89, 69, 1)",
         },
     },
+    typography :{
+        h1 : {
+            fontFamily:"Raleway"
+        },
+        h2 : {
+            fontFamily : "Raleway"
+        },
+        h3 : {
+            fontFamily: "Raleway"
+        }
+    }
 };
 
 export const dark: ThemeOptions = {
@@ -35,4 +46,15 @@ export const dark: ThemeOptions = {
             dark: "rgba(148, 89, 69, 1)",
         },
     },
+    typography :{
+        h1 : {
+            fontFamily:"Raleway"
+        },
+        h2 : {
+            fontFamily : "Raleway"
+        },
+        h3 : {
+            fontFamily : "Raleway"
+        }
+    }
 };

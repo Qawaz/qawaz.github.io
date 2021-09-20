@@ -1,11 +1,15 @@
 import * as React from "react"
 import {createMuiTheme, MuiThemeProvider} from "@material-ui/core";
 import {dark} from "../theme/themes";
+import {ThemeProvider} from "styled-components";
 
 export default function Providers(props) {
+    const theme = createMuiTheme(dark)
     return (
-        <MuiThemeProvider theme={createMuiTheme(dark)}>
-            {props.children}
+        <MuiThemeProvider theme={theme}>
+            <ThemeProvider theme={theme}>
+                {props.children}
+            </ThemeProvider>
         </MuiThemeProvider>
     )
 }

@@ -20,6 +20,17 @@ exports.light = {
             dark: "rgba(148, 89, 69, 1)",
         },
     },
+    typography: {
+        h1: {
+            fontFamily: "Raleway"
+        },
+        h2: {
+            fontFamily: "Raleway"
+        },
+        h3: {
+            fontFamily: "Raleway"
+        }
+    }
 };
 exports.dark = {
     palette: {
@@ -35,4 +46,15 @@ exports.dark = {
             dark: "rgba(148, 89, 69, 1)",
         },
     },
+    typography: {
+        h1: {
+            fontFamily: "Raleway"
+        },
+        h2: {
+            fontFamily: "Raleway"
+        },
+        h3: {
+            fontFamily: "Raleway"
+        }
+    }
 };

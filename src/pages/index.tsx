@@ -3,9 +3,9 @@ import Providers from "../components/Providers";
 import WebFonts from "../components/common/WebFonts";
 import styled from "styled-components";
 import {GlobalStyles} from "../components/common/GlobalStyles";
-import {useTheme} from "@material-ui/core";
+import {Typography, useTheme} from "@material-ui/core";
 import {StaticImage} from "gatsby-plugin-image";
-import {DemoContainer, DemoHeading, DemoImage, DemoParagraph, DemoText} from "../components/main/DemoSection";
+import {DemoContainer, DemoImage, DemoText} from "../components/main/DemoSection";
 import {FeatureBox, FeatureText} from "../components/main/FeatureBox";
 import LightDarkIcon from "../icons/LightDarkIcon";
 import CloudSyncIcon from "../icons/CloudSyncIcon";
@@ -26,50 +26,47 @@ export default function Home() {
 
 const MainPage = () => {
     const theme = useTheme()
+
     return (
-        <MainContainer style={{background: theme.palette.primary.main}}>
-            <CenteredColumn>
-                <SecondaryHeading>
-                    <Row>
+        <div>
+            <MainContainer style={{background: theme.palette.primary.main}}>
+                <MainSlide>
+                    <SecondaryHeading variant={"h2"} style={{color: theme.palette.text.primary}} align={"center"}>
                         Meet &nbsp; <span style={{background: theme.palette.secondary.main}}>T</span>imeline
-                    </Row>
-                </SecondaryHeading>
-                <PrimaryHeading>
-                    A Note Taking Tool
-                </PrimaryHeading>
-                <StaticImage
-                    src={"../images/demo-1.png"}
-                    alt={"Demo First"}
-                    width={1000}
-                />
+                    </SecondaryHeading>
+                    <MainHeading variant={"h1"} style={{color: theme.palette.text.primary}} align={"center"}>
+                        A Note Taking Tool
+                    </MainHeading>
+                    <MainDemoContainer>
+                        <StaticImage
+                            src={"../images/demo-1.png"}
+                            alt={"Demo First"}
+                            width={1000}
+                        />
+                    </MainDemoContainer>
+                </MainSlide>
+            </MainContainer>
+            <ContentContainer>
                 <DemoSectionOne/>
                 <DemoSectionTwo/>
-                <FeatureRow/>
+                <AllFeatures/>
                 <AvailableSection/>
                 <Footer/>
-            </CenteredColumn>
-        </MainContainer>
+            </ContentContainer>
+        </div>
     )
 }
 
-const SecondaryHeading = styled.h1`
-  color: #fff;
-  font-family: 'Raleway', 'sans-serif';
-  margin-top: 16rem;
-  font-size: 3em;
-  margin-bottom: 0.2em;
+const SecondaryHeading = styled(Typography)`
+  ${props => props.theme.breakpoints.down("md")} {
+    font-size: 2rem !important;
+  }
 `
 
-const PrimaryHeading = styled.h1`
-  font-family: 'Raleway', 'sans-serif';
-  font-size: 4em;
-  margin-top: 0.2em;
-  color: #fff;
-`
-
-const Row = styled.div`
-  display: flex;
-  flex-direction: row;
+const MainHeading = styled(Typography)`
+  ${props => props.theme.breakpoints.down("md")} {
+    font-size: 4rem !important;
+  }
 `
 
 const CenteredColumn = styled.div`
@@ -79,12 +76,47 @@ const CenteredColumn = styled.div`
   align-items: center;
 `
 
-const MainContainer = styled.div`
-  width: 100%;
-  height: 880px;
+const MainSlide = styled(CenteredColumn)`
+  padding-top: 5em;
+
+  ${props => props.theme.breakpoints.up("md")} {
+    padding-top: 18em;
+  }
 `
 
-const FeatureRow = styled((props) => {
+const MainDemoContainer = styled.div`
+  position: absolute;
+  top: 30em;
+  transform: translateY(-50%);
+
+  ${props => props.theme.breakpoints.up("sm")} {
+    top: 40em;
+  }
+
+  ${props => props.theme.breakpoints.up("md")} {
+    top: 60em;
+  }
+`
+
+const MainContainer = styled.div`
+  width: 100%;
+  height: 30em;
+  position: relative;
+
+  ${props => props.theme.breakpoints.up("sm")} {
+    height: 40em;
+  }
+
+  ${props => props.theme.breakpoints.up("md")} {
+    height: 60em;
+  }
+`
+
+const ContentContainer = styled.div`
+  margin-top: 30em;
+`
+
+const AllFeatures = styled((props) => {
     return (
         <div {...props}>
             <FeatureBox>
@@ -109,10 +141,16 @@ const FeatureRow = styled((props) => {
     )
 })`
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   min-width: 60%;
-  margin: 6em 0;
+  margin: 10em 0;
+
+  ${props => props.theme.breakpoints.up("md")} {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 `
 
 const AvailableSection = () => {
@@ -121,12 +159,10 @@ const AvailableSection = () => {
 
     return (
         <CenteredColumn>
-            <DemoHeading style={{
-                color: theme.palette.primary.main
-            }}>
+            <Typography style={{color: theme.palette.primary.main}}>
                 Available Now
-            </DemoHeading>
-            <CustomMainButton style={{background: theme.palette.primary.main, width: "270px"}}>
+            </Typography>
+            <CustomMainButton style={{width: "270px"}}>
                 <GooglePlayIcon/>
                 <span style={{
                     width: "100%",
@@ -137,7 +173,7 @@ const AvailableSection = () => {
                 </span>
             </CustomMainButton>
             <a href={"https://timeline-notes.github.io/web"} style={{textDecoration: "none"}}>
-                <CustomMainButton style={{background: theme.palette.primary.main, width: "270px"}}>
+                <CustomMainButton style={{width: "270px"}}>
                     <WebIcon/>
                     <span style={{
                         width: "100%",
@@ -156,17 +192,18 @@ const DemoSectionOne = () => {
     return (
         <DemoContainer>
             <DemoText>
-                <DemoHeading>
+                <Typography align={"center"} variant={"h3"}>
                     Sketch Out <br/>
                     Your Thoughts
-                </DemoHeading>
-                <DemoParagraph>
+                </Typography>
+                <br/>
+                <Typography align={"center"}>
                     Timeline provides most features required to draw out multiple
                     images into one note , that can be shared & exported. <br/>
                     Features like undo , redo , background color change , pointer color ,
                     zoom & pan and the ability to toggle between them easily. <br/>
                     But most prominent feature of sketch is that it exports to SVG.
-                </DemoParagraph>
+                </Typography>
             </DemoText>
             <DemoImage>
                 <StaticImage
@@ -179,9 +216,9 @@ const DemoSectionOne = () => {
     )
 }
 
-const DemoSectionTwo = () => {
+const DemoSectionTwo = styled((props) => {
     return (
-        <DemoContainer>
+        <DemoContainer {...props}>
             <DemoImage>
                 <StaticImage
                     src={"../images/demo-3.png"}
@@ -190,20 +227,27 @@ const DemoSectionTwo = () => {
                 />
             </DemoImage>
             <DemoText>
-                <DemoHeading>
+                <Typography align={"center"} variant={"h3"}>
                     Intuitive <br/>
                     Easy To Understand
-                </DemoHeading>
-                <DemoParagraph>
+                </Typography>
+                <br/>
+                <Typography align={"center"}>
                     Timeline makes it easy to access the items you need.
                     Everything will feel under your control.<br/>
                     It will save you a low of time to do everything else and
                     help you to be more productive , The app will suit to your needs.
-                </DemoParagraph>
+                </Typography>
             </DemoText>
         </DemoContainer>
     )
-}
+})`
+  flex-direction: column-reverse;
+
+  ${props => props.theme.breakpoints.up("sm")} {
+    flex-direction: row;
+  }
+`
 
 const Footer = () => {
 
@@ -212,7 +256,7 @@ const Footer = () => {
     return (
         <FooterContainer style={{background: theme.palette.primary.main}}>
             <FooterText>&copy; Copyright Timeline 2021</FooterText>
-            <div style={{float: "right"}}>
+            <FooterRightContainer>
                 <ALink href={"/terms"}>
                     <FooterText>
                         Terms of services
@@ -223,7 +267,7 @@ const Footer = () => {
                         Privacy Policy
                     </FooterText>
                 </ALink>
-            </div>
+            </FooterRightContainer>
         </FooterContainer>
     )
 }
@@ -236,12 +280,9 @@ const ALink = styled.a`
   }
 `
 
-const FooterText = styled.span`
+const FooterText = styled(Typography)`
   color: white;
-  vertical-align: middle;
-  font-family: 'Roboto', 'sans-serif';
-  line-height: 3em;
-  height: 3em;
+  line-height: 3em !important;
   padding: 0 2em;
 `
 
@@ -250,5 +291,15 @@ const FooterContainer = styled.div`
   height: 3em;
   margin-top: 6em;
   color: white;
+  position: relative;
+  overflow: hidden;
+`
+
+const FooterRightContainer = styled.div`
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
 `
 
