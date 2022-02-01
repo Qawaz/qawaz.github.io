@@ -13,6 +13,7 @@ import SyncCircle from "../icons/SyncCircle";
 import {CustomMainButton} from "../components/common/CustomMainButton";
 import GooglePlayIcon from "../icons/GooglePlayIcon";
 import WebIcon from "../icons/WebIcon";
+import CustomHelmet from "../components/common/CustomHelmet";
 
 export default function Home() {
     return (
@@ -29,6 +30,7 @@ const MainPage = () => {
 
     return (
         <div>
+            <CustomHelmet />
             <MainContainer style={{background: theme.palette.primary.main}}>
                 <MainSlide>
                     <SecondaryHeading variant={"h2"} style={{color: theme.palette.text.primary}} align={"center"}>
