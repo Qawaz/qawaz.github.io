@@ -10,9 +10,9 @@ export default function Home() {
         <PageContainer>
             <PageBackground>
                 <HeaderContainer>
-                    <CodeckleLogo />
+                    <CodeckleLogo style={{width:"120",height:"60",marginLeft:"24px"}} />
                     <NavContainer>
-                        <HeaderNav />
+                        <HeaderNav current="home"/>
                     </NavContainer>
                 </HeaderContainer>
                 <SmallFooter />
@@ -22,7 +22,7 @@ export default function Home() {
 }
 
 const PageBackground = styled.div`
-    background: ${props => props.theme.palette.primary.main};
+    background: ${props => props.theme.palette.primary.dark};
 `
 
 const HeaderContainer = styled.div`

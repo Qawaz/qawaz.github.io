@@ -14,9 +14,9 @@ export const light: ThemeOptions = {
             dark: "#00293b",
         },
         secondary: {
-            light: "rgba(224, 130, 96, 1)",
-            main: "#F68054",
-            dark: "rgba(148, 89, 69, 1)",
+            light: "#4DB156",
+            main: "#3b8241",
+            dark: "#2f6934",
         },
     },
     typography :{

@@ -1,29 +1,33 @@
 import styled from "styled-components";
-import {Typography, useTheme} from "@material-ui/core";
-import {StaticImage} from "gatsby-plugin-image";
-import {DemoContainer, DemoImage, DemoText} from "../components/main/DemoSection";
-import {FeatureBox, FeatureText} from "../components/main/FeatureBox";
+import { Typography, useTheme } from "@material-ui/core";
+import { StaticImage } from "gatsby-plugin-image";
+import { DemoContainer, DemoImage, DemoText } from "../components/main/DemoSection";
+import { FeatureBox, FeatureText } from "../components/main/FeatureBox";
 import LightDarkIcon from "../icons/LightDarkIcon";
 import CloudSyncIcon from "../icons/CloudSyncIcon";
 import SyncCircle from "../icons/SyncCircle";
-import {CustomMainButton} from "../components/common/CustomMainButton";
+import { CustomMainButton } from "../components/common/CustomMainButton";
 import GooglePlayIcon from "../icons/GooglePlayIcon";
 import WebIcon from "../icons/WebIcon";
 import PageContainer from "../components/common/PageContainer";
 import SmallFooter from "../components/page/SmallFooter";
+import HeaderNav from "../components/page/HeaderNav";
 
-export default function TimelinePage(){
+export default function TimelinePage() {
 
     const theme = useTheme()
 
     return (
         <PageContainer>
-            <MainContainer style={{background: theme.palette.primary.main}}>
+            <MainContainer>
+                <HeaderNavContainer>
+                    <HeaderNav current="timeline"/>
+                </HeaderNavContainer>
                 <MainSlide>
-                    <SecondaryHeading variant={"h2"} style={{color: theme.palette.text.primary}} align={"center"}>
-                        Meet &nbsp; <span style={{background: theme.palette.secondary.main}}>T</span>imeline
+                    <SecondaryHeading variant={"h2"} style={{ color: theme.palette.text.primary }} align={"center"}>
+                        Meet &nbsp; <span style={{ background: theme.palette.secondary.main }}>T</span>imeline
                     </SecondaryHeading>
-                    <MainHeading variant={"h1"} style={{color: theme.palette.text.primary}} align={"center"}>
+                    <MainHeading variant={"h1"} style={{ color: theme.palette.text.primary }} align={"center"}>
                         A Note Taking Tool
                     </MainHeading>
                     <MainDemoContainer>
@@ -36,25 +40,31 @@ export default function TimelinePage(){
                 </MainSlide>
             </MainContainer>
             <ContentContainer>
-                <DemoSectionOne/>
-                <DemoSectionTwo/>
-                <AllFeatures/>
-                <AvailableSection/>
+                <DemoSectionOne />
+                <DemoSectionTwo />
+                <AllFeatures />
+                <AvailableSection />
                 <SmallFooter />
             </ContentContainer>
         </PageContainer>
     )
 }
 
-
+const HeaderNavContainer = styled.div`
+    display:flex;
+    justify-content:end;
+    margin-right:2em;
+`
 
 const SecondaryHeading = styled(Typography)`
+    color : ${props => props.theme.palette.text.primary} !important;
   ${props => props.theme.breakpoints.down("md")} {
     font-size: 2rem !important;
   }
 `
 
 const MainHeading = styled(Typography)`
+    color : ${props => props.theme.palette.text.primary} !important;
   ${props => props.theme.breakpoints.down("md")} {
     font-size: 4rem !important;
   }
@@ -93,6 +103,7 @@ const MainContainer = styled.div`
   width: 100%;
   height: 30em;
   position: relative;
+  background : ${props => props.theme.palette.primary.dark};
 
   ${props => props.theme.breakpoints.up("sm")} {
     height: 40em;
@@ -111,19 +122,19 @@ const AllFeatures = styled((props) => {
     return (
         <div {...props}>
             <FeatureBox>
-                <LightDarkIcon/>
+                <LightDarkIcon />
                 <FeatureText>
                     Light / Dark Theme
                 </FeatureText>
             </FeatureBox>
             <FeatureBox>
-                <CloudSyncIcon/>
+                <CloudSyncIcon />
                 <FeatureText>
                     Cloud Auto Sync
                 </FeatureText>
             </FeatureBox>
             <FeatureBox>
-                <SyncCircle/>
+                <SyncCircle />
                 <FeatureText>
                     Local Backup
                 </FeatureText>
@@ -136,7 +147,8 @@ const AllFeatures = styled((props) => {
   justify-content: center;
   align-items: center;
   min-width: 60%;
-  margin: 10em 0;
+  max-width: 80%;
+  margin : 2em auto;
 
   ${props => props.theme.breakpoints.up("md")} {
     flex-direction: row;
@@ -150,11 +162,11 @@ const AvailableSection = () => {
 
     return (
         <CenteredColumn>
-            <Typography style={{color: theme.palette.primary.main}}>
+            <Typography style={{ color: theme.palette.primary.main }}>
                 Available Now
             </Typography>
-            <CustomMainButton style={{width: "270px"}}>
-                <GooglePlayIcon/>
+            <CustomMainButton style={{ width: "270px" }}>
+                <GooglePlayIcon />
                 <span style={{
                     width: "100%",
                     color: "white",
@@ -163,16 +175,16 @@ const AvailableSection = () => {
                     Download on Play Store
                 </span>
             </CustomMainButton>
-            <a href={"https://timeline-notes.github.io/web"} style={{textDecoration: "none"}}>
-                <CustomMainButton style={{width: "270px"}}>
-                    <WebIcon/>
+            <a href={"https://timeline-notes.github.io/web"} style={{ textDecoration: "none" }}>
+                <CustomMainButton style={{ width: "270px" }}>
+                    <WebIcon />
                     <span style={{
                         width: "100%",
                         color: "white",
                         marginLeft: "1em",
                     }}>
-                    Try on Web
-                </span>
+                        Try on Web
+                    </span>
                 </CustomMainButton>
             </a>
         </CenteredColumn>
@@ -184,15 +196,15 @@ const DemoSectionOne = () => {
         <DemoContainer>
             <DemoText>
                 <Typography align={"center"} variant={"h3"}>
-                    Sketch Out <br/>
+                    Sketch Out <br />
                     Your Thoughts
                 </Typography>
-                <br/>
+                <br />
                 <Typography align={"center"}>
                     Timeline provides most features required to draw out multiple
-                    images into one note , that can be shared & exported. <br/>
+                    images into one note , that can be shared & exported. <br />
                     Features like undo , redo , background color change , pointer color ,
-                    zoom & pan and the ability to toggle between them easily. <br/>
+                    zoom & pan and the ability to toggle between them easily. <br />
                     But most prominent feature of sketch is that it exports to SVG.
                 </Typography>
             </DemoText>
@@ -219,13 +231,13 @@ const DemoSectionTwo = styled((props) => {
             </DemoImage>
             <DemoText>
                 <Typography align={"center"} variant={"h3"}>
-                    Intuitive <br/>
+                    Intuitive <br />
                     Easy To Understand
                 </Typography>
-                <br/>
+                <br />
                 <Typography align={"center"}>
                     Timeline makes it easy to access the items you need.
-                    Everything will feel under your control.<br/>
+                    Everything will feel under your control.<br />
                     It will save you a low of time to do everything else and
                     help you to be more productive , The app will suit to your needs.
                 </Typography>
@@ -237,13 +249,5 @@ const DemoSectionTwo = styled((props) => {
 
   ${props => props.theme.breakpoints.up("sm")} {
     flex-direction: row;
-  }
-`
-
-const ALink = styled.a`
-  text-decoration: none;
-
-  &:hover {
-    text-decoration: underline;
   }
 `
