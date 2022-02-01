@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import {useTheme} from "@material-ui/core";
-import * as React from "react"
+
 
 export const FeatureBox = styled.div`
   width: 12em;
