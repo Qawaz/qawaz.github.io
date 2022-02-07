@@ -33,7 +33,7 @@ const FooterText = styled(Typography)`
 
 const FooterContainer = styled.div`
     width: 100%;
-    margin-top: 6em;
+    height:3rem;
     color: white;
     overflow: hidden;
     display:flex;

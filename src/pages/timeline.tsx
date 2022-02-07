@@ -9,20 +9,28 @@ import SyncCircle from "../icons/SyncCircle";
 import { CustomMainButton } from "../components/common/CustomMainButton";
 import GooglePlayIcon from "../icons/GooglePlayIcon";
 import WebIcon from "../icons/WebIcon";
-import PageContainer from "../components/common/PageContainer";
+import PageWrapper from "../components/common/PageWrapper";
 import SmallFooter from "../components/page/SmallFooter";
 import HeaderNav from "../components/page/HeaderNav";
+import PageContainer from "../components/page/PageContainer";
 
-export default function TimelinePage() {
+export default function Page() {
+    return (
+        <PageWrapper title="Timeline">
+            <PageContainer current="timeline" useLightLogo={true}>
+                <TimelinePage />
+            </PageContainer>
+        </PageWrapper>
+    )
+}
+
+function TimelinePage() {
 
     const theme = useTheme()
 
     return (
-        <PageContainer>
+        <div>
             <MainContainer>
-                <HeaderNavContainer>
-                    <HeaderNav current="timeline"/>
-                </HeaderNavContainer>
                 <MainSlide>
                     <SecondaryHeading variant={"h2"} style={{ color: theme.palette.text.primary }} align={"center"}>
                         Meet &nbsp; <span style={{ background: theme.palette.secondary.main }}>T</span>imeline
@@ -44,17 +52,10 @@ export default function TimelinePage() {
                 <DemoSectionTwo />
                 <AllFeatures />
                 <AvailableSection />
-                <SmallFooter />
             </ContentContainer>
-        </PageContainer>
+        </div>
     )
 }
-
-const HeaderNavContainer = styled.div`
-    display:flex;
-    justify-content:end;
-    margin-right:2em;
-`
 
 const SecondaryHeading = styled(Typography)`
     color : ${props => props.theme.palette.text.primary} !important;
@@ -78,10 +79,11 @@ const CenteredColumn = styled.div`
 `
 
 const MainSlide = styled(CenteredColumn)`
-  padding-top: 5em;
+  padding-top: 2em;
+  margin-bottom:1em;
 
   ${props => props.theme.breakpoints.up("md")} {
-    padding-top: 18em;
+    padding-top: 14em;
   }
 `
 
@@ -175,7 +177,7 @@ const AvailableSection = () => {
                     Download on Play Store
                 </span>
             </CustomMainButton>
-            <a href={"https://timeline-notes.github.io/web"} style={{ textDecoration: "none" }}>
+            <a href={"https://codeckle.github.io/web"} style={{ textDecoration: "none" }}>
                 <CustomMainButton style={{ width: "270px" }}>
                     <WebIcon />
                     <span style={{

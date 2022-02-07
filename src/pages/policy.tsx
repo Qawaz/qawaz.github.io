@@ -1,6 +1,6 @@
 import { Link, Typography } from "@material-ui/core"
 
-import PageContainer from "../components/common/PageContainer"
+import PageWrapper from "../components/common/PageWrapper"
 import styled from "styled-components"
 
 const CenteredColumn = styled.div`
@@ -32,7 +32,7 @@ const PadBox = styled.div`
 
 export default function Policy() {
     return (
-        <PageContainer title="Privacy Policy">
+        <PageWrapper title="Privacy Policy">
             <CenteredColumn>
                 <PadBox>
                     <Typography variant="h2">Privacy Policy for Codeckle</Typography>
@@ -251,6 +251,6 @@ export default function Policy() {
                     </Typography>
                 </PadBox>
             </CenteredColumn>
-        </PageContainer>
+        </PageWrapper>
     )
 }

@@ -1,6 +1,6 @@
 import { Link, Typography } from "@material-ui/core"
 
-import PageContainer from "../components/common/PageContainer"
+import PageWrapper from "../components/common/PageWrapper"
 import styled from "styled-components"
 
 const CenteredColumn = styled.div`
@@ -32,7 +32,7 @@ const PadBox = styled.div`
 
 export default function Terms() {
     return (
-        <PageContainer title="Terms of Services">
+        <PageWrapper title="Terms of Services">
             <CenteredColumn>
                 <PadBox>
                 <Typography variant="h2">Codeckle's Terms of Services</Typography>
@@ -143,6 +143,6 @@ export default function Terms() {
                     </Typography>
                 </PadBox>
             </CenteredColumn>
-        </PageContainer>
+        </PageWrapper>
     )
 }
