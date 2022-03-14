@@ -12,6 +12,8 @@ import WebIcon from "../icons/WebIcon";
 import PageWrapper from "../components/common/PageWrapper";
 import PageContainer from "../components/page/PageContainer";
 import {Link} from "gatsby";
+import {CloudDownloadOutlined} from "@material-ui/icons";
+import WindowsIcon from "../icons/WindowsIcon";
 
 export default function Page() {
     return (
@@ -51,6 +53,7 @@ function TimelinePage() {
                 <DemoSectionTwo/>
                 <AllFeatures/>
                 <AvailableSection/>
+                <div style={{height: "2em"}}/>
             </ContentContainer>
         </div>
     )
@@ -168,7 +171,19 @@ const AvailableSection = () => {
             <Typography style={{color: theme.palette.primary.main}}>
                 Available Now
             </Typography>
-            <Link to="https://play.google.com/store/apps/details?id=com.wakaztahir.timeline" target={"_blank"}>
+            <Link to="https://codeckle.github.io/web" style={{textDecoration: "none"}} target={"_blank"}>
+                <CustomMainButton style={{width: "270px"}}>
+                    <WebIcon/>
+                    <span style={{
+                        width: "100%",
+                        color: "white",
+                        marginLeft: "1em",
+                    }}>
+                        Try on Web
+                    </span>
+                </CustomMainButton>
+            </Link>
+            <Link to="https://play.google.com/store/apps/details?id=com.wakaztahir.timeline" style={{textDecoration: "none"}}  target={"_blank"}>
                 <CustomMainButton style={{width: "270px"}}>
                     <GooglePlayIcon/>
                     <span style={{
@@ -180,16 +195,16 @@ const AvailableSection = () => {
                 </span>
                 </CustomMainButton>
             </Link>
-            <Link to="https://codeckle.github.io/web" style={{textDecoration: "none"}} target={"_blank"}>
+            <Link to="https://github.com/codeckle/timeline-kmp/releases/download/1.0.1/timeline-windows-v1.0.1.msi" style={{textDecoration: "none"}}  target={"_blank"}>
                 <CustomMainButton style={{width: "270px"}}>
-                    <WebIcon/>
+                    <WindowsIcon />
                     <span style={{
                         width: "100%",
                         color: "white",
-                        marginLeft: "1em",
+                        marginLeft: "1em"
                     }}>
-                        Try on Web
-                    </span>
+                    Download for Windows
+                </span>
                 </CustomMainButton>
             </Link>
         </CenteredColumn>
