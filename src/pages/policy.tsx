@@ -9,7 +9,7 @@ const CenteredColumn = styled.div`
     display:flex;
     flex-direction:column;
     justify-content:center;
-    align-items:center
+    align-items:center;
 
     & > {
         align-self:start;
