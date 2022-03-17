@@ -12,13 +12,12 @@ import WebIcon from "../icons/WebIcon";
 import PageWrapper from "../components/common/PageWrapper";
 import PageContainer from "../components/page/PageContainer";
 import {Link} from "gatsby";
-import {CloudDownloadOutlined} from "@material-ui/icons";
 import WindowsIcon from "../icons/WindowsIcon";
 
 export default function Page() {
     return (
         <PageWrapper title="Timeline">
-            <PageContainer current="timeline" useLightLogo={true}>
+            <PageContainer current="timeline">
                 <TimelinePage/>
             </PageContainer>
         </PageWrapper>
@@ -59,6 +58,7 @@ function TimelinePage() {
     )
 }
 
+
 const SecondaryHeading = styled(Typography)`
   color: ${props => props.theme.palette.text.primary} !important;
 
@@ -86,6 +86,10 @@ const MainSlide = styled(CenteredColumn)`
   padding-top: 2em;
   margin-bottom: 1em;
 
+  ${props => props.theme.breakpoints.up("sm")} {
+    padding-top: 6em;
+  }
+  
   ${props => props.theme.breakpoints.up("md")} {
     padding-top: 14em;
   }
@@ -183,7 +187,8 @@ const AvailableSection = () => {
                     </span>
                 </CustomMainButton>
             </Link>
-            <Link to="https://play.google.com/store/apps/details?id=com.wakaztahir.timeline" style={{textDecoration: "none"}}  target={"_blank"}>
+            <Link to="https://play.google.com/store/apps/details?id=com.wakaztahir.timeline"
+                  style={{textDecoration: "none"}} target={"_blank"}>
                 <CustomMainButton style={{width: "270px"}}>
                     <GooglePlayIcon/>
                     <span style={{
@@ -195,9 +200,10 @@ const AvailableSection = () => {
                 </span>
                 </CustomMainButton>
             </Link>
-            <Link to="https://github.com/codeckle/timeline-kmp/releases/download/1.0.1/timeline-windows-v1.0.1.msi" style={{textDecoration: "none"}}  target={"_blank"}>
+            <Link to="https://github.com/codeckle/timeline-kmp/releases/download/1.0.1/timeline-windows-v1.0.1.msi"
+                  style={{textDecoration: "none"}} target={"_blank"}>
                 <CustomMainButton style={{width: "270px"}}>
-                    <WindowsIcon />
+                    <WindowsIcon/>
                     <span style={{
                         width: "100%",
                         color: "white",

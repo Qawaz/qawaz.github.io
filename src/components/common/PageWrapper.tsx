@@ -1,8 +1,9 @@
 import CustomHelmet from "./CustomHelmet";
 import { GlobalStyles } from "./GlobalStyles";
-import { createMuiTheme, MuiThemeProvider } from "@material-ui/core";
+import {createMuiTheme, createTheme, MuiThemeProvider} from "@material-ui/core";
 import { dark } from "../../theme/themes";
 import { ThemeProvider } from "styled-components";
+import React from "react";
 
 interface PageProps { title?: string }
 
@@ -16,8 +17,8 @@ export default function PageWrapper(props: React.PropsWithChildren<PageProps>) {
     )
 }
 
-export function Providers(props) {
-    const theme = createMuiTheme(dark)
+export function Providers(props : React.PropsWithChildren<any>) {
+    const theme = createTheme(dark)
     return (
         <MuiThemeProvider theme={theme}>
             <ThemeProvider theme={theme}>

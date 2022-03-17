@@ -1,41 +1,44 @@
-import { Link, Typography } from "@material-ui/core"
+import {Link, Typography} from "@material-ui/core"
 
 import PageWrapper from "../components/common/PageWrapper"
 import styled from "styled-components"
+import Header from "../components/page/Header";
+import Footer from "../components/page/Footer";
 
 const CenteredColumn = styled.div`
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-    & > {
-        align-self:start;
-    }
+  & > {
+    align-self: start;
+  }
 `
 
 const PadBox = styled.div`
-    padding : 12px 0px;
-    max-width : 80%;
-    align-self:center;
+  padding: 12px 0px;
+  max-width: 80%;
+  align-self: center;
 
-    & > * {
-        padding-left : 24px;
-    }
+  & > * {
+    padding-left: 24px;
+  }
 
-    & > h1,h2,h3,h4,h5,h6 {
-        margin-top:12px;
-        margin-bottom:12px;
-        padding-left:0px;
-    }
+  & > h1, h2, h3, h4, h5, h6 {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    padding-left: 0px;
+  }
 `
 
 export default function Terms() {
     return (
         <PageWrapper title="Terms of Services">
+            <Header/>
             <CenteredColumn>
                 <PadBox>
-                <Typography variant="h2">Codeckle's Terms of Services</Typography>
+                    <Typography variant="h2">Codeckle's Terms of Services</Typography>
                     <Typography variant="h3">1. Terms</Typography>
                     <Typography variant="body1">
                         By accessing this Website / Using the app , you are agreeing to be
@@ -143,6 +146,8 @@ export default function Terms() {
                     </Typography>
                 </PadBox>
             </CenteredColumn>
+            <div style={{height: "2em"}}/>
+            <Footer/>
         </PageWrapper>
     )
 }
