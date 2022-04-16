@@ -200,7 +200,7 @@ const AvailableSection = () => {
                 </span>
                 </CustomMainButton>
             </Link>
-            <Link to="https://github.com/codeckle/timeline-kmp/releases/download/1.0.18/timeline-windows-v1.0.18.msi"
+            <Link to="https://github.com/codeckle/timeline-kmp/releases/download/1.0.19/Timeline-1.0.19.msi"
                   style={{textDecoration: "none"}} target={"_blank"}>
                 <CustomMainButton style={{width: "270px"}}>
                     <WindowsIcon/>
