@@ -10,7 +10,7 @@ interface PageProps { title?: string }
 export default function PageWrapper(props: React.PropsWithChildren<PageProps>) {
     return (
         <Providers>
-            <CustomHelmet title={"Codeckle - " + (props.title || "Software Solutions")} />
+            <CustomHelmet title={"Qawaz - " + (props.title || "Software Solutions")} />
             <GlobalStyles />
             {props.children}
         </Providers>

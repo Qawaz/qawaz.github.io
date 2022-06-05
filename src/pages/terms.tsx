@@ -38,7 +38,7 @@ export default function Terms() {
             <Header/>
             <CenteredColumn>
                 <PadBox>
-                    <Typography variant="h2">Codeckle's Terms of Services</Typography>
+                    <Typography variant="h2">Qawaz's Terms of Services</Typography>
                     <Typography variant="h3">1. Terms</Typography>
                     <Typography variant="body1">
                         By accessing this Website / Using the app , you are agreeing to be
@@ -51,7 +51,7 @@ export default function Terms() {
                     <Typography variant="h3">2. Use License</Typography>
                     <Typography variant="body1">
                         Permission is granted to temporarily download one copy of the
-                        materials on Codeckle's Website for personal, non-commercial
+                        materials on Qawaz's Website for personal, non-commercial
                         transitory viewing only. This is the grant of a license, not a
                         transfer of title, and under this license you may not:
                     </Typography>
@@ -63,7 +63,7 @@ export default function Terms() {
                                 display;
                             </li>
                             <li>
-                                attempt to reverse engineer any software contained on Codeckle's
+                                attempt to reverse engineer any software contained on Qawaz's
                                 Website;
                             </li>
                             <li>
@@ -77,16 +77,16 @@ export default function Terms() {
                         </ul>
                     </Typography>
                     <Typography variant="body1">
-                        This will let Codeckle to terminate upon violations of any of these
+                        This will let Qawaz to terminate upon violations of any of these
                         restrictions. Upon termination, your viewing right will also be
                         terminated and you should destroy any downloaded materials in your
                         possession whether it is printed or electronic format.
                     </Typography>
                     <Typography variant="h3">3. Disclaimer</Typography>
                     <Typography variant="body1">
-                        All the materials on Codeckle’s Website are provided "as is".
-                        Codeckle makes no warranties, may it be expressed or implied,
-                        therefore negates all other warranties. Furthermore, Codeckle does
+                        All the materials on Qawaz’s Website are provided "as is".
+                        Qawaz makes no warranties, may it be expressed or implied,
+                        therefore negates all other warranties. Furthermore, Qawaz does
                         not make any representations concerning the accuracy or reliability
                         of the use of the materials on its Website or otherwise relating to
                         such materials or any sites linked to this Website.
@@ -96,9 +96,9 @@ export default function Terms() {
 
 
                     <Typography variant="body1">
-                        Codeckle or its suppliers will not be hold accountable for any
+                        Qawaz or its suppliers will not be hold accountable for any
                         damages that will arise with the use or inability to use the
-                        materials on Codeckle’s Website, even if Codeckle or an authorize
+                        materials on Qawaz’s Website, even if Qawaz or an authorize
                         representative of this Website has been notified, orally or written,
                         of the possibility of such damage. Some jurisdiction does not allow
                         limitations on implied warranties or limitations of liability for
@@ -108,11 +108,11 @@ export default function Terms() {
                     <Typography variant="h3">5. Revisions and Errata</Typography>
 
                     <Typography variant="body1">
-                        The materials appearing on Codeckle’s Website may include technical,
-                        typographical, or photographic errors. Codeckle will not promise
+                        The materials appearing on Qawaz’s Website may include technical,
+                        typographical, or photographic errors. Qawaz will not promise
                         that any of the materials in this Website are accurate, complete, or
-                        current. Codeckle may change the materials contained on its Website
-                        at any time without notice. Codeckle does not make any commitment to
+                        current. Qawaz may change the materials contained on its Website
+                        at any time without notice. Qawaz does not make any commitment to
                         update the materials.
                     </Typography>
 
@@ -120,28 +120,28 @@ export default function Terms() {
 
 
                     <Typography variant="body1">
-                        Codeckle has not reviewed all of the sites linked to its Website and
+                        Qawaz has not reviewed all of the sites linked to its Website and
                         is not responsible for the contents of any such linked site. The
-                        presence of any link does not imply endorsement by Codeckle of the
+                        presence of any link does not imply endorsement by Qawaz of the
                         site. The use of any linked website is at the user’s own risk.
                     </Typography>
 
                     <Typography variant="h3">7. Site Terms of Use Modifications</Typography>
 
                     <Typography variant="body1">
-                        Codeckle may revise these Terms of Use for its Website at any time
+                        Qawaz may revise these Terms of Use for its Website at any time
                         without prior notice. By using this Website, you are agreeing to be
                         bound by the current version of these Terms and Conditions of Use.
                     </Typography>
 
                     <Typography variant="h3">8. Your Privacy</Typography>
 
-                    <Typography variant="body1">Please read our <Link href="/policy">Privacy Policy.</Link></Typography>
+                    <Typography variant="body1">Please read our <Link href="/privacy">Privacy Policy.</Link></Typography>
 
                     <Typography variant="h3">9. Governing Law</Typography>
 
                     <Typography variant="body1">
-                        Any claim related to Codeckle's Website shall be governed by the
+                        Any claim related to Qawaz's Website shall be governed by the
                         laws of UK without regards to its conflict of law provisions.
                     </Typography>
                 </PadBox>

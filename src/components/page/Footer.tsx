@@ -7,14 +7,14 @@ export default function Footer() {
 
     return (
         <FooterContainer style={{background: theme.palette.primary.main}}>
-            <FooterText>&copy; Copyright Timeline 2021</FooterText>
+            <FooterText>&copy; Copyright Qawaz 2022</FooterText>
             <FooterRightContainer>
                 <Link href={"/terms"}>
                     <FooterText>
                         Terms of services
                     </FooterText>
                 </Link>
-                <Link href={"/policy"}>
+                <Link href={"/privacy"}>
                     <FooterText>
                         Privacy Policy
                     </FooterText>

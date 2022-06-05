@@ -175,7 +175,7 @@ const AvailableSection = () => {
             <Typography style={{color: theme.palette.primary.main}}>
                 Available Now
             </Typography>
-            <Link to="https://codeckle.github.io/web" style={{textDecoration: "none"}} target={"_blank"}>
+            <Link to="https://qawaz.github.io/web" style={{textDecoration: "none"}} target={"_blank"}>
                 <CustomMainButton style={{width: "270px"}}>
                     <WebIcon/>
                     <span style={{

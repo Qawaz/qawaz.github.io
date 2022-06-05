@@ -1,8 +1,8 @@
 import {IconButton, IconButtonProps, Link, Typography} from "@material-ui/core";
 import React, {useState} from "react";
 import styled from "styled-components";
-import CodeckleLogoLight from "../../icons/CodeckleLogo";
-import CodeckleLogoDark from "../../icons/CodeckleLogoDark";
+import QawazLogoLight from "../../icons/QawazLogoLight";
+import QawazLogoDark from "../../icons/QawazLogoDark";
 import {MenuRounded} from "@material-ui/icons";
 
 interface HeaderProps {
@@ -19,9 +19,9 @@ export default function Header(props: React.PropsWithChildren<HeaderProps>) {
             <HeaderContainer>
                 {
                     props.useLightLogo == null || props.useLightLogo ? (
-                        <CodeckleLogoLight style={{width: "120", height: "60", marginLeft: "24px"}}/>
+                        <QawazLogoLight style={{width: "120", height: "60", marginLeft: "24px"}}/>
                     ) : (
-                        <CodeckleLogoDark style={{width: "120", height: "60", marginLeft: "24px"}}/>
+                        <QawazLogoDark style={{width: "120", height: "60", marginLeft: "24px"}}/>
                     )
                 }
                 <NavContainer>
@@ -66,16 +66,17 @@ function NavMenu(props: NavMenuProps) {
                     <Typography variant="subtitle1">Timeline</Typography>
                 </NavItemComponent>
             </Link>
-            <Link href="/about">
-                <NavItemComponent item="about">
-                    <Typography variant="subtitle1">About</Typography>
-                </NavItemComponent>
-            </Link>
-            <Link href="/contact">
-                <NavItemComponent item="contact">
-                    <Typography variant="subtitle1">Contact</Typography>
-                </NavItemComponent>
-            </Link>
+            {/* todo make About & Contact section */}
+            {/*<Link href="/about">*/}
+            {/*    <NavItemComponent item="about">*/}
+            {/*        <Typography variant="subtitle1">About</Typography>*/}
+            {/*    </NavItemComponent>*/}
+            {/*</Link>*/}
+            {/*<Link href="/contact">*/}
+            {/*    <NavItemComponent item="contact">*/}
+            {/*        <Typography variant="subtitle1">Contact</Typography>*/}
+            {/*    </NavItemComponent>*/}
+            {/*</Link>*/}
         </React.Fragment>
     )
 }
