@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkQawaz=self.webpackChunkQawaz||[]).push([[218],{9786:function(n,a,e){e.r(a),e.d(a,{default:function(){return u}});var r=e(5893);function u(){return(0,r.jsx)("div",{children:(0,r.jsx)("h1",{children:"Can't find what you are looking for"})})}}}]);
+//# sourceMappingURL=component---src-pages-404-tsx-813a418ea2b3fe0127b7.js.map
