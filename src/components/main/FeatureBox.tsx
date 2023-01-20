@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import {useTheme} from "@material-ui/core";
 
 
 export const FeatureBox = styled.div`
@@ -13,10 +12,4 @@ export const FeatureBox = styled.div`
   align-items:center;
   justify-content:center;
   border : 2px solid ${props=> props.theme.palette.primary.main}; 
-`
-
-export const FeatureText = styled.span`
-  font-family: 'Roboto', 'sans-serif';
-  padding-left : 1em;
-  color : ${props=> props.theme.palette.primary.main};
 `

@@ -1,9 +1,10 @@
-import {IconButton, IconButtonProps, Link, Typography} from "@material-ui/core";
 import React, {useState} from "react";
 import styled from "styled-components";
 import QawazLogoLight from "../../icons/QawazLogoLight";
 import QawazLogoDark from "../../icons/QawazLogoDark";
-import {MenuRounded} from "@material-ui/icons";
+import {Link} from "../common/Link";
+import {Typography} from "../common/Typography";
+import MenuIcon from "../../icons/MenuIcon";
 
 interface HeaderProps {
     useLightLogo?: boolean;
@@ -12,7 +13,7 @@ interface HeaderProps {
 
 export default function Header(props: React.PropsWithChildren<HeaderProps>) {
 
-    let [menuOpen,setMenuOpen] = useState(false)
+    let [menuOpen, setMenuOpen] = useState(false)
 
     return (
         <React.Fragment>
@@ -25,13 +26,15 @@ export default function Header(props: React.PropsWithChildren<HeaderProps>) {
                     )
                 }
                 <NavContainer>
-                    <MobileMenuButton onClick={()=> { setMenuOpen(!menuOpen) }}/>
-                        <NavMenuContainer>
-                            <NavMenu selected={props.current}/>
-                        </NavMenuContainer>
+                    <MobileMenuButton onClick={() => {
+                        setMenuOpen(!menuOpen)
+                    }}/>
+                    <NavMenuContainer>
+                        <NavMenu selected={props.current}/>
+                    </NavMenuContainer>
                 </NavContainer>
             </HeaderContainer>
-            <MobileMenuContainer style={{ maxHeight : menuOpen ? "80em" : 0}}>
+            <MobileMenuContainer style={{maxHeight: menuOpen ? "80em" : 0}}>
                 <NavMenu selected={props.current}/>
             </MobileMenuContainer>
         </React.Fragment>
@@ -58,12 +61,7 @@ function NavMenu(props: NavMenuProps) {
         <React.Fragment>
             <Link href="/">
                 <NavItemComponent item="home">
-                    <Typography variant="subtitle1">Home</Typography>
-                </NavItemComponent>
-            </Link>
-            <Link href="/timeline">
-                <NavItemComponent item="timeline">
-                    <Typography variant="subtitle1">Timeline</Typography>
+                    <Typography variant="h6">Home</Typography>
                 </NavItemComponent>
             </Link>
             {/* todo make About & Contact section */}
@@ -81,7 +79,7 @@ function NavMenu(props: NavMenuProps) {
     )
 }
 
-const MobileMenuIconButton = styled(IconButton)`
+const MobileMenuIconButton = styled.div`
 
   display: block;
 
@@ -90,39 +88,39 @@ const MobileMenuIconButton = styled(IconButton)`
   }
 `
 
-const MobileMenuButton = (props : IconButtonProps) => {
+const MobileMenuButton = (props: any) => {
     return (
         <MobileMenuIconButton {...props}>
-            <MenuRounded/>
+            <MenuIcon/>
         </MobileMenuIconButton>
     )
 }
 
 const MobileMenuContainer = styled.ul`
-  background: ${props=> props.theme.palette.primary.main};
-  padding:0;
-  margin:0;
-  max-height : 0;
-  overflow : hidden;
-  transition : max-height 0.25s ease-in;
-  z-index:88;
-  
-  ${props=> props.theme.breakpoints.up("sm")}{
-    max-height:0 !important;
+  background: ${props => props.theme.palette.primary.main};
+  padding: 0;
+  margin: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.25s ease-in;
+  z-index: 88;
+
+  ${props => props.theme.breakpoints.up("sm")} {
+    max-height: 0 !important;
   }
 `
 
 const NavMenuContainer = styled.ul`
   display: none;
-  padding:0;
-  
-  & li{
-    display:inline-block;
-    border-radius:6px;
+  padding: 0;
+
+  & li {
+    display: inline-block;
+    border-radius: 6px;
   }
-  
-  ${props => props.theme.breakpoints.up("sm")}{
-    display:inline;
+
+  ${props => props.theme.breakpoints.up("sm")} {
+    display: inline;
   }
 `
 

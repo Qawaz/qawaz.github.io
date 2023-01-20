@@ -1,9 +1,9 @@
-import { Link, Typography } from "@material-ui/core"
-
+import React from "react"
 import PageWrapper from "../components/common/PageWrapper"
 import styled from "styled-components"
 import Header from "../components/page/Header";
 import Footer from "../components/page/Footer";
+import {Typography} from "../components/common/Typography";
 
 const CenteredColumn = styled.div`
     display:flex;

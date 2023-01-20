@@ -1,9 +1,12 @@
-import {Link, Typography, useTheme} from "@material-ui/core"
+import React from "react"
 import styled from "styled-components"
+import {useAppTheme} from "../../theme/themes";
+import {Link} from "../common/Link";
+import {Typography} from "../common/Typography";
 
 export default function Footer() {
 
-    const theme = useTheme()
+    const theme = useAppTheme()
 
     return (
         <FooterContainer style={{background: theme.palette.primary.main}}>

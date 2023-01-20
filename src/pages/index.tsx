@@ -1,13 +1,17 @@
-import {Button, Link, Typography, useTheme} from "@material-ui/core"
-import {Web} from "@material-ui/icons"
+import React from "react"
+
 import styled from "styled-components"
 import PageWrapper from "../components/common/PageWrapper"
 import PageContainer from "../components/page/PageContainer"
+import {useAppTheme} from "../theme/themes";
+import {Typography} from "../components/common/Typography";
+import {Link} from "../components/common/Link";
+import WebIcon from "../icons/WebIcon";
 
 
 export default function Page(props: React.PropsWithChildren<{}>) {
     return (
-        <PageWrapper title="Home">
+        <PageWrapper title="Qawaz - Innovative Apps">
             <PageBackground>
                 <PageContainer current="home" useLightLogo={true}>
                     <Home/>
@@ -19,22 +23,22 @@ export default function Page(props: React.PropsWithChildren<{}>) {
 
 function Home() {
 
-    const theme = useTheme()
+    const theme = useAppTheme()
 
     return (
         <CenteredContent>
-            <Typography variant="h1" align="center" color="textPrimary">
+            <Typography variant="h1" align="center">
                 Creative Solutions
             </Typography>
-            <Typography variant="h2" align="center" color="textPrimary">
+            <Typography variant="h2" align="center">
                 Best Note Taking App
             </Typography>
-            <Link href="./timeline" style={{textDecoration: "none"}}>
-                <CenteredButton variant="contained" color="secondary" style={{marginTop: "2em"}}>
-                    <Web style={{color: theme.palette.text.primary}}/>
+            <Link href="./agency">
+                <CenteredButton color="secondary" style={{marginTop: "2em"}}>
+                    <WebIcon />
                     &nbsp;
                     &nbsp;
-                    <Typography color="textPrimary">
+                    <Typography>
                         Explore Products
                     </Typography>
                 </CenteredButton>
@@ -54,6 +58,6 @@ const CenteredContent = styled.div`
   align-items: center;
 `
 
-const CenteredButton = styled(Button)`
+const CenteredButton = styled.button`
   min-height: 3rem;
 `
