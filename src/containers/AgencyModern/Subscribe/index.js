@@ -21,7 +21,7 @@ import bg5 from '../../../common/assets/image/agencyModern/cta/5.png';
 
 const Subscribe = () => {
   return (
-    <SectionWrapper>
+    <SectionWrapper id={"news"}>
       <Container>
         <FooterInner>
           <Content>

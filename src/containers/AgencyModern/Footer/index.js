@@ -16,6 +16,7 @@ import FooterWrapper, {
 import LogoImage from '../../../common/assets/image/agencyModern/logo.png';
 
 import data from '../../../common/data/AgencyModern';
+import QawazLogoDark from "../../../icons/QawazLogoDark";
 
 const Footer = () => {
   return (
@@ -25,7 +26,8 @@ const Footer = () => {
           <CopyrightInfo>
             <Fade up delay={100}>
               <div className="logo">
-                <NextImage src={LogoImage} alt="Logo" />
+                <QawazLogoDark />
+                {/*<NextImage src={LogoImage} alt="Logo" />*/}
               </div>
               <p>
                 <Link href="/terms">Terms of use</Link> |{' '}
@@ -56,7 +58,7 @@ const Footer = () => {
               <Heading as="h4" content="Our Information" />
               <Nav>
                 {data.ourInformation.map((item) => (
-                  <Link key={item.id} href="#">
+                  <Link key={item.id} href={item.link}>
                     {item.title}
                   </Link>
                 ))}
@@ -82,7 +84,7 @@ const Footer = () => {
               <Heading as="h4" content="Connect" />
               <Nav>
                 {data.social.map((item) => (
-                  <Link key={item.id} href={item.link}>
+                  <Link key={item.id} href={item.link} target={"_blank"}>
                     <img src={item?.icon} alt={item.title} />
                     {item.title}
                   </Link>

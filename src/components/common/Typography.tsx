@@ -11,6 +11,7 @@ interface TypographyProps extends PropsWithChildren {
 
 export function Typography(props: TypographyProps) {
     const realVariant = props.variant == "body1" || props.variant == "body2" ? "p" : (props.variant || "span")
+
     const theme = useAppTheme()
 
     // @ts-ignore

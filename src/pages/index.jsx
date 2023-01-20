@@ -27,7 +27,7 @@ const AgencyModern = () => {
                 <Head>
                     <title>Qawaz - App Development Company</title>
                     <meta name="theme-color" content="#FF825C" />
-                    <meta name="Description" content="React next landing page" />
+                    <meta name="Description" content="App Development Company" />
 
                     {/* Load google fonts */}
                     <link
