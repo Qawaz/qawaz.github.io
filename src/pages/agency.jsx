@@ -25,7 +25,7 @@ const AgencyModern = () => {
         <ThemeProvider theme={theme}>
             <Fragment>
                 <Head>
-                    <title>Agency Modern | A react next landing page</title>
+                    <title>Qawaz - App Development Company</title>
                     <meta name="theme-color" content="#FF825C" />
                     <meta name="Description" content="React next landing page" />
 
@@ -49,7 +49,7 @@ const AgencyModern = () => {
                     <WorkHard />
                     <UltimateFeature />
                     <Customer />
-                    <News />
+                    {/*<News />*/}
                     <Subscribe />
                     <Footer />
                 </ContentWrapper>

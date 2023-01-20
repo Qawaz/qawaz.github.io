@@ -27,9 +27,9 @@ const WorkHard = () => {
           <Content>
             <Heading
               as="h2"
-              content="Don’t work hard, be smart &amp; work smartly. Take relax sit"
+              content="Simplify Your Workflow with Qawaz's App Solutions"
             />
-            <Text content="Get your tests delivered at let home collect sample from the victory of the managments that supplies best design system guidelines ever." />
+            <Text content="At Qawaz, we understand the importance of working smartly and efficiently. That's why we offer a wide range of apps to help simplify your workflow. From note-taking and to-do lists to file sharing and project management, our apps are designed to help you work smarter, not harder." />
             <ListGroup>
               {data.WorkHardList.map((item) => (
                 <List

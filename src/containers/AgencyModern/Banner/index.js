@@ -1,7 +1,6 @@
 import React from 'react';
 import Container from '../../../common/components/UI/ContainerTwo';
 import Text from '../../../common/components/Text';
-import NextImage from '../../../common/components/NextImage';
 import Button from '../../../common/components/Button';
 import Heading from '../../../common/components/Heading';
 import Input from '../../../common/components/Input';
@@ -23,12 +22,12 @@ const Banner = () => {
         <BannerContent>
           <Heading
             as="h1"
-            content="Build your audience &amp; grow your business online smarter"
+            content="Be Productive &amp; Get more done with our Apps"
           />
 
           <Text
             className="banner-caption"
-            content="Agencies around the world are moving to the digital agencies. So, It is high time to introduce your agency digitaly. We respect our customer opinions."
+            content="Our easy to use apps provide you with tools to work smarter and faster with less mistakes. We create tools for creative people to hack their productivity."
           />
 
           <Subscribe>
@@ -41,14 +40,14 @@ const Banner = () => {
             <Button title="Subscribe" type="submit" />
           </Subscribe>
 
-          <SponsoredBy>
-            <Text className="sponsoredBy" content="Sponsored by:" />
-            <ImageGroup>
-              <NextImage src={paypal} alt="Paypal" />
-              <NextImage src={google} alt="Google" />
-              <NextImage src={dropbox} alt="Dropbox" />
-            </ImageGroup>
-          </SponsoredBy>
+          {/*<SponsoredBy>*/}
+          {/*  <Text className="sponsoredBy" content="Sponsored by:" />*/}
+          {/*  <ImageGroup>*/}
+          {/*    <NextImage src={paypal} alt="Paypal" />*/}
+          {/*    <NextImage src={google} alt="Google" />*/}
+          {/*    <NextImage src={dropbox} alt="Dropbox" />*/}
+          {/*  </ImageGroup>*/}
+          {/*</SponsoredBy>*/}
         </BannerContent>
       </Container>
     </BannerWrapper>

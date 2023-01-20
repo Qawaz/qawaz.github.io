@@ -86,84 +86,84 @@ const data = {
     {
       id: 1,
       icon: serviceIcon1,
-      title: 'For Individuals',
-      description: `We are commited to provide proper business solutions with reasonable pricing.`,
+      title: 'For Singles',
+      description: `We offer a variety of apps to help individuals manage their personal tasks, notes and ideas. Whether you need a simple to-do list app or a more robust note-taking app, we've got you covered.`,
     },
     {
       id: 2,
       icon: serviceIcon2,
-      title: 'For Team',
-      description: `A day to day report about your ongoing business for proper understanding.`,
+      title: 'For Teams',
+      description: `Our apps are also perfect for teams looking to collaborate and increase productivity. We offer file sharing and project management tools that make it easy for teams to work together.`,
     },
     {
       id: 3,
       icon: serviceIcon3,
-      title: 'For Company',
-      description: `Proper Content Management is important to find out the real clients for your agencies.`,
+      title: 'For Companies',
+      description: `We understand the unique needs of companies and offer enterprise solutions to help streamline operations and improve communication. From custom app development to API integrations, we can help your company stay ahead of the game.`,
     },
   ],
   accordion: [
     {
       id: 1,
       expend: true,
-      title: 'Organize your project content',
-      description: `Proper Content Management is important to find out the real clients for your agencies.A day to day report about your ongoing business for proper understanding.`,
+      title: 'Welcome to Qawaz!',
+      description: `We're so glad you found us. We're the company behind those apps you've never heard of, like Timeline, easyToDo, Sketchable, and ShareAnything.`,
     },
     {
       id: 2,
-      title: 'Collaborate your documents easily',
-      description: `Some hardworking People are Working Day and Night to provide you highly scalable product that supplies best design system guidelines ever.`,
+      title: 'Our Services',
+      description: `We specialize in creating apps that no one wants to use. But hey, if you're looking for a to-do list app or a sketching app, we've got you covered.`,
     },
     {
       id: 3,
-      title: "Build your team's knowledge base",
-      description: `We respect our customer opinions and deals with them with perfect wireframing.A day to day report about your ongoing business for proper understanding.`,
+      title: "Our Process",
+      description: `It's simple really. We come up with an idea, spend a ton of money and time developing it, and then release it to the world where it is promptly ignored. Rinse and repeat.`,
     },
   ],
   WorkHardList: [
-    { id: 1, title: 'Medical and vision' },
-    { id: 2, title: 'Life insurance' },
-    { id: 3, title: '400(k) savings' },
-    { id: 4, title: 'HSAs and FSAs' },
-    { id: 5, title: 'Commuter benefits' },
-    { id: 6, title: '529 college savings' },
+    { id: 1, title: 'Timeline' },
+    { id: 2, title: 'easyToDo' },
+    { id: 3, title: 'MindNode' },
+    { id: 4, title: 'Sketchable' },
+    { id: 5, title: 'ShareAnything' },
+    { id: 6, title: 'PhotoEditor'},
   ],
   features: [
     {
       id: 1,
       icon: featureIcon1,
-      title: 'ultimate Email  subscription',
-      desc: 'To successfully engage with your subscribers, your newsletter must entice readers and encourage them.',
+      title: 'Collaboration Features',
+      desc: 'Our apps are designed to make collaboration easy. Share files, assign tasks and communicate with your team in real-time.',
     },
     {
       id: 2,
       icon: featureIcon2,
-      title: 'Bolt Performance',
-      desc: 'LiteSpeed Web Server is a high-performance HTTP server and known for its high performance.',
+      title: 'Efficient Task Management',
+      desc: 'Our apps are designed to make task management easy. Create and manage to-do lists, set reminders, and track progress.',
     },
     {
       id: 3,
       icon: featureIcon3,
-      title: 'Secure Transaction',
-      desc: 'Get your Secure Transaction delivered at home collect a sample from the your task.',
+      title: 'Secure Data Storage',
+      desc: 'We take data security seriously. Our apps use state-of-the-art encryption to ensure that your data is always safe.',
     },
     {
       id: 4,
       icon: featureIcon4,
-      title: 'Multiple Options',
-      desc: 'Client Satisfaction is our first priority and We are best at it and ongoing assistance',
+      title: 'Customizable Interface',
+      desc: 'Our apps are designed to be flexible and customizable. Tailor them to your specific needs and preferences.',
     },
     {
       id: 5,
       icon: featureIcon5,
-      title: '5 Star Rating service',
-      desc: 'We have support team for 24/7 operation. They provide help at any time.',
+      title: '24/7 Support',
+      desc: 'We are here to help. Our dedicated support team is available 24/7 to answer any questions and provide assistance.',
     },
     {
       id: 6,
       icon: featureIcon6,
-      title: 'Integrated with Shopify',
-      desc: 'You can build any kind of E-commerce Shop with payment security tools.',
+      title: 'Cross-Platform Compatibility',
+      desc: 'Our apps are designed to work seamlessly across multiple platforms, including iOS, Android, and web.',
     },
   ],
   posts: [
@@ -188,10 +188,6 @@ const data = {
   ],
   aboutUs: [
     {
-      id: 1,
-      title: 'Support Center',
-    },
-    {
       id: 2,
       title: 'Customer Support',
     },
@@ -206,10 +202,6 @@ const data = {
   ],
   ourInformation: [
     {
-      id: 1,
-      title: 'Return Policy',
-    },
-    {
       id: 2,
       title: 'Privacy Policy',
     },
@@ -217,10 +209,10 @@ const data = {
       id: 3,
       title: 'Terms & Conditions',
     },
-    {
-      id: 4,
-      title: 'Site Map',
-    },
+    // {
+    //   id: 4,
+    //   title: 'Site Map',
+    // },
   ],
   myAccount: [
     {
@@ -244,23 +236,21 @@ const data = {
     {
       id: 1,
       icon: facebook,
+      link : "https://www.facebook.com/qawaz/",
       title: 'Facebook',
     },
     {
       id: 2,
       icon: twitter,
+      link : "https://twitter.com/QawazOfficial",
       title: 'Twitter',
     },
     {
       id: 3,
       icon: github,
+      link : "https://github.com/Qawaz/",
       title: 'Github',
-    },
-    {
-      id: 4,
-      icon: dribbble,
-      title: 'Dribbble',
-    },
+    }
   ],
 };
 export default data;

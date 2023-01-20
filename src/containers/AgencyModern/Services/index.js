@@ -16,8 +16,8 @@ const Services = () => {
       <Container>
         <Fade up delay={100}>
           <SectionHeader>
-            <Heading content="Business start with great features" />
-            <Text content="Build an incredible workplace and grow your business with all-in-one platform with amazing contents." />
+            <Heading content="Built For Everyone" />
+            <Text content="Our apps span multiple platforms & systems , We are constantly growing & Welcome everyone." />
           </SectionHeader>
         </Fade>
         <ServiceWrapper>

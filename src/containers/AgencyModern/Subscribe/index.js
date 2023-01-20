@@ -26,7 +26,7 @@ const Subscribe = () => {
         <FooterInner>
           <Content>
             <Heading as="h3" content="Like our service? Subscribe us" />
-            <Text content="We have more than thousand of creative entrepreneurs and stat joining our business" />
+            <Text content="We will send you emails (only the important stuff) about our new products and services" />
           </Content>
           <SubscriptionForm>
             <div>
@@ -41,16 +41,16 @@ const Subscribe = () => {
             <CheckBox
               id="remember"
               htmlFor="remember"
-              labelText="Don’t provide any promotional message."
+              labelText="Send additional updates about apps I use"
             />
           </SubscriptionForm>
         </FooterInner>
       </Container>
-      <img src={bg1?.src} alt="bg1" className="illustration bg1" />
-      <img src={bg2?.src} alt="bg2" className="illustration bg2" />
-      <img src={bg3?.src} alt="bg3" className="illustration bg3" />
-      <img src={bg4?.src} alt="bg4" className="illustration bg4" />
-      <img src={bg5?.src} alt="bg5" className="illustration bg5" />
+      <img src={bg1} alt="bg1" className="illustration bg1" />
+      <img src={bg2} alt="bg2" className="illustration bg2" />
+      <img src={bg3} alt="bg3" className="illustration bg3" />
+      <img src={bg4} alt="bg4" className="illustration bg4" />
+      <img src={bg5} alt="bg5" className="illustration bg5" />
     </SectionWrapper>
   );
 };

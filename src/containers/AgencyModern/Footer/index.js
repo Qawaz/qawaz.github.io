@@ -28,12 +28,12 @@ const Footer = () => {
                 <NextImage src={LogoImage} alt="Logo" />
               </div>
               <p>
-                <Link href="#">Terms of use</Link> |{' '}
-                <Link href="#">Privacy</Link>
+                <Link href="/terms">Terms of use</Link> |{' '}
+                <Link href="/privacy">Privacy</Link>
               </p>
               <Text
                 className="copyright"
-                content="Copyright by 2019 Redq, Inc"
+                content="Copyright by 2023 Qawaz"
               />
             </Fade>
           </CopyrightInfo>
@@ -64,26 +64,26 @@ const Footer = () => {
             </Fade>
           </FooterWidget>
 
-          <FooterWidget>
-            <Fade up delay={400}>
-              <Heading as="h4" content="My Account" />
-              <Nav>
-                {data.myAccount.map((item) => (
-                  <Link key={item.id} href="#">
-                    {item.title}
-                  </Link>
-                ))}
-              </Nav>
-            </Fade>
-          </FooterWidget>
+          {/*<FooterWidget>*/}
+          {/*  <Fade up delay={400}>*/}
+          {/*    <Heading as="h4" content="My Account" />*/}
+          {/*    <Nav>*/}
+          {/*      {data.myAccount.map((item) => (*/}
+          {/*        <Link key={item.id} href="#">*/}
+          {/*          {item.title}*/}
+          {/*        </Link>*/}
+          {/*      ))}*/}
+          {/*    </Nav>*/}
+          {/*  </Fade>*/}
+          {/*</FooterWidget>*/}
 
           <FooterWidget>
             <Fade up delay={500}>
               <Heading as="h4" content="Connect" />
               <Nav>
                 {data.social.map((item) => (
-                  <Link key={item.id} href="#">
-                    <img src={item?.icon?.src} alt="Facebook" />
+                  <Link key={item.id} href={item.link}>
+                    <img src={item?.icon} alt={item.title} />
                     {item.title}
                   </Link>
                 ))}

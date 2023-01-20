@@ -29,8 +29,8 @@ const Features = () => {
             <NextImage src={feature} alt="Feature Image" />
           </div>
           <div className="content">
-            <Heading content="Meet our exciting features that make you wow 😮" />
-            <Text content="Build an incredible workplace and grow your business with all-in-one platform with amazing contents." />
+            <Heading content="Qawaz - Innovative App Development" />
+            <Text content="Welcome to Qawaz, a leading app development company. We specialize in creating innovative apps for individuals, teams, and companies. From note-taking and to-do lists to file sharing and custom development, we have a wide range of services to meet your needs. Browse our accordion sections to learn more about our offerings and approach." />
             <Accordion preExpanded={[0]}>
               <Fragment>
                 {data.accordion.map((item, index) => (

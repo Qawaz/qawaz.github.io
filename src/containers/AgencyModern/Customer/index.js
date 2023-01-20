@@ -26,9 +26,9 @@ const Customer = () => {
           <Content>
             <Heading
               as="h2"
-              content="We have more than thousand of worldwide happy customer"
+              content="Empowering Businesses and Individuals with Cutting-Edge Technology"
             />
-            <Text content="Coworking offers beautifully crafted workspaces where people can create, connect, and grow their businesses at prime locations in multiple cities." />
+            <Text content="Qawaz is dedicated to providing innovative app solutions that empower businesses and individuals to work smarter, not harder. Our apps are designed to increase productivity, streamline operations and enhance communication. With a wide range of services and a commitment to customer satisfaction, we have helped many users worldwide achieve their goals." />
             <Link className="explore" href="#">
               Explore more <Icon icon={chevronRight} />
             </Link>
