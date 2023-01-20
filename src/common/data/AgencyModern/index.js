@@ -106,7 +106,7 @@ const data = {
         {
             id: 1,
             icon: serviceIcon1,
-            title: 'For Singles',
+            title: 'For Individuals',
             description: `We offer a variety of apps to help individuals manage their personal tasks, notes and ideas. Whether you need a simple to-do list app or a more robust note-taking app, we've got you covered.`,
         },
         {

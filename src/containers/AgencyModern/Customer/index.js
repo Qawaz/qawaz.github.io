@@ -29,9 +29,9 @@ const Customer = () => {
               content="Empowering Businesses and Individuals with Cutting-Edge Technology"
             />
             <Text content="Qawaz is dedicated to providing innovative app solutions that empower businesses and individuals to work smarter, not harder. Our apps are designed to increase productivity, streamline operations and enhance communication. With a wide range of services and a commitment to customer satisfaction, we have helped many users worldwide achieve their goals." />
-            <Link className="explore" href="#">
-              Explore more <Icon icon={chevronRight} />
-            </Link>
+            {/*<Link className="explore" href="#">*/}
+            {/*  Explore more <Icon icon={chevronRight} />*/}
+            {/*</Link>*/}
           </Content>
         </Section>
       </Container>

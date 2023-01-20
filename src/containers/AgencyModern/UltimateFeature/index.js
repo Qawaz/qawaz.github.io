@@ -33,9 +33,9 @@ const UltimateFeature = () => {
               description={
                 <React.Fragment>
                   <Text content={feature.desc} />
-                  <Link href="#" className="learn__more">
-                    Learn More <Icon icon={chevronRight} />
-                  </Link>
+                  {/*<Link href="#" className="learn__more">*/}
+                  {/*  Learn More <Icon icon={chevronRight} />*/}
+                  {/*</Link>*/}
                 </React.Fragment>
               }
               className="ultimateFeature"
