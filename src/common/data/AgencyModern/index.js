@@ -1,3 +1,4 @@
+import React from "react"
 import serviceIcon1 from '../../../common/assets/image/agencyModern/services/1.png';
 import serviceIcon2 from '../../../common/assets/image/agencyModern/services/2.png';
 import serviceIcon3 from '../../../common/assets/image/agencyModern/services/3.png';
@@ -11,9 +12,16 @@ import news1 from '../../../common/assets/image/agencyModern/news/1.png';
 import news2 from '../../../common/assets/image/agencyModern/news/2.png';
 import news3 from '../../../common/assets/image/agencyModern/news/3.png';
 import facebook from '../../../common/assets/image/agencyModern/icons/facebook.png';
-import dribbble from '../../../common/assets/image/agencyModern/icons/dribbble.png';
 import github from '../../../common/assets/image/agencyModern/icons/github.png';
 import twitter from '../../../common/assets/image/agencyModern/icons/twitter.png';
+import sketchable from "../../../images/sketchable.png"
+import easy_to_do_icon from "../../../images/easy_to_do.png"
+import timeline_icon from "../../../images/timeline.png"
+import MindNodeIcon from "../../../icons/MindNodeIcon";
+import {useAppTheme} from "../../../theme/themes";
+import PhotoEditorIcon from "../../../icons/PhotoEditorIcon";
+import ShareAnythingIcon from "../../../icons/ShareAnythingIcon";
+import TimelineIcon from "../../../icons/TimelineIcon";
 
 const data = {
     leftMenuItems: [
@@ -141,12 +149,12 @@ const data = {
         },
     ],
     WorkHardList: [
-        {id: 1, title: 'Timeline'},
-        {id: 2, title: 'easyToDo'},
-        {id: 3, title: 'MindNode'},
-        {id: 4, title: 'Sketchable'},
-        {id: 5, title: 'ShareAnything'},
-        {id: 6, title: 'PhotoEditor'},
+        {id: 1, title: 'Timeline',icon : TimelineIcon },
+        {id: 2, title: 'easyToDo',icon_url : easy_to_do_icon },
+        {id: 3, title: 'MindNode', icon: MindNodeIcon  },
+        {id: 4, title: 'Sketchable',icon_url : sketchable },
+        {id: 5, title: 'ShareAnything',icon : ShareAnythingIcon },
+        {id: 6, title: 'PhotoEditor',icon : PhotoEditorIcon },
     ],
     features: [
         {

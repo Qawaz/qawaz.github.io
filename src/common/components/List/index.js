@@ -9,12 +9,14 @@ const List = ({ className, icon, text, link, ...props }) => (
       <Link to={link}>
         <a>
           {icon}
+          &nbsp;&nbsp;
           {text}
         </a>
       </Link>
     ) : (
       <Fragment>
         {icon}
+        &nbsp;&nbsp;
         {text}
       </Fragment>
     )}
