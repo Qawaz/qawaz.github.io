@@ -13,7 +13,7 @@ import SectionWrapper, {
   Content,
   Illustration,
 } from './customer.style';
-import illustration from '../../../common/assets/image/agencyModern/customer.png';
+import illustration from '../../../common/assets/image/agencyModern/business_people_with_gear.png';
 
 const Customer = () => {
   return (

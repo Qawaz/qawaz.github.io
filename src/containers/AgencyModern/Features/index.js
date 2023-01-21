@@ -17,7 +17,7 @@ import  Icon  from 'react-icons-kit';
 import { thinDown } from 'react-icons-kit/entypo/thinDown';
 import { thinRight } from 'react-icons-kit/entypo/thinRight';
 import SectionWrapper, { ContentWrapper } from './features.style';
-import feature from '../../../common/assets/image/agencyModern/features/feature.png';
+import feature from '../../../common/assets/image/agencyModern/features/mindnode_screen.png';
 import data from '../../../common/data/AgencyModern';
 
 const Features = () => {
@@ -26,7 +26,7 @@ const Features = () => {
       <Container>
         <ContentWrapper>
           <div className="image">
-            <NextImage src={feature} alt="Feature Image" />
+            <NextImage src={feature} alt="Feature Image" style={{width:"720px",height:"800px"}}/>
           </div>
           <div className="content">
             <Heading content="Qawaz - Innovative App Development" />
