@@ -14,7 +14,7 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "typecheck": "tsc --noEmit",
-    "deploy": "npm run build && node deploy.js"
+    "deploy": "node deploy.js"
   },
   "dependencies": {
     "@styled-system/theme-get": "^5.1.2",
@@ -37,7 +37,12 @@
     "react-scrollspy": "^3.4.3",
     "react-stickynode": "^4.1.0",
     "styled-components": "^5.3.6",
-    "styled-system": "^5.1.5"
+    "styled-system": "^5.1.5",
+
+    "react-countup": "^6.0.0",
+    "react-slick": "^0.28.1",
+    "simple-react-lightbox": "^3.6.9-0",
+    "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
     "@types/node": "^18.11.18",

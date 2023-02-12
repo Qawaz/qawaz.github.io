@@ -10,6 +10,11 @@ import data from '../../../common/data/AgencyModern';
 import {CloseIcon} from "../../../common/components/Accordion";
 import MenuIcon from "../../../icons/MenuIcon";
 import QawazLogoDark from "../../../icons/QawazLogoDark";
+import styled from "styled-components";
+
+const StyledLogo = styled(QawazLogoDark)`
+  margin-right:auto;
+`
 
 const Navbar = (props) => {
     const [mobileMenu, setMobileMenu] = useState(false);
@@ -35,7 +40,7 @@ const Navbar = (props) => {
     return (
         <NavbarWrapper className="agencyModern-navbar navbar">
             <Container>
-                <QawazLogoDark/>
+
                 <div style={{width: "2em"}}/>
                 {/*<Logo*/}
                 {/*  href="/agencymodern"*/}
@@ -46,6 +51,7 @@ const Navbar = (props) => {
                 {/* end of logo */}
 
                 <MenuArea>
+                    <StyledLogo />
                     <ScrollSpyMenu
                         className="menu-items menu-left"
                         menuItems={leftMenuItems}
