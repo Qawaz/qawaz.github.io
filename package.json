@@ -1,8 +1,8 @@
 {
-  "name": "timeline-site",
+  "name": "qawaz-site",
   "version": "1.0.0",
   "private": true,
-  "description": "timeline-site",
+  "description": "qawaz-site",
   "author": "Waqas Tahir",
   "keywords": [
     "gatsby"
