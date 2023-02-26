@@ -2,27 +2,24 @@ import React, {Fragment, PropsWithChildren} from "react";
 import styled, {ThemeProvider} from "styled-components";
 import Head from "react-helmet";
 // @ts-ignore
-import { theme } from '../../common/theme/agencyModern';
+import {theme} from '../../common/theme/agencyModern';
 // @ts-ignore
 import ResetCSS from '../../common/assets/css/style';
-import {
-    GlobalStyle,
-    ContentWrapper,
 // @ts-ignore
-} from '../../containers/AgencyModern/agencyModern.style';
+import {ContentWrapper, GlobalStyle,} from '../../containers/AgencyModern/agencyModern.style';
 // @ts-ignore
 import Sticky from 'react-stickynode';
 // @ts-ignore
 import Navbar from '../../containers/AgencyModern/Navbar';
 // @ts-ignore
-import { DrawerProvider } from '../../common/contexts/DrawerContext';
+import {DrawerProvider} from '../../common/contexts/DrawerContext';
 // @ts-ignore
 import Footer from '../../containers/AgencyModern/Footer';
 
 // @ts-ignore
 import data from "../../common/data/AgencyModern"
 
-const PadBox = styled.div`
+export const ContentPadding = styled.div`
   padding: 8em 3rem;
   max-width: 80%;
   align-self: center;
@@ -33,12 +30,12 @@ const PadBox = styled.div`
 `
 
 const contentPageLinks = {
-    leftMenuItems: data.leftMenuItems.map((e : any) => ({...e, staticLink: true, path: "/"})),
-    rightMenuItems: data.rightMenuItems.map((e : any) => ({...e, staticLink: true, path: "/"})),
-    mobileMenuItems: data.mobileMenuItems.map((e : any) => ({...e, staticLink: true, path: "/"})),
+    leftMenuItems: data.leftMenuItems.map((e: any) => ({...e, staticLink: true, path: "/"})),
+    rightMenuItems: data.rightMenuItems.map((e: any) => ({...e, staticLink: true, path: "/"})),
+    mobileMenuItems: data.mobileMenuItems.map((e: any) => ({...e, staticLink: true, path: "/"})),
 }
 
-export default function ContentPage(props: PropsWithChildren<{ title ?: string }>) {
+export default function ContentPage(props: PropsWithChildren<{ title?: string }>) {
     return (
         <ThemeProvider theme={theme}>
             <Fragment>
@@ -61,10 +58,8 @@ export default function ContentPage(props: PropsWithChildren<{ title ?: string }
                             <Navbar {...contentPageLinks}/>
                         </DrawerProvider>
                     </Sticky>
-                    <PadBox>
-                        {props.children}
-                        <Footer />
-                    </PadBox>
+                    {props.children}
+                    <Footer/>
                 </ContentWrapper>
             </Fragment>
         </ThemeProvider>
