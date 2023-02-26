@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunktimeline_site=self.webpackChunktimeline_site||[]).push([[591],{3130:function(e,t,n){n.r(t),n.d(t,{default:function(){return c}});var i=n(7294);function c(){const e=document.createElement("a");return e.href="/",e.click(),i.createElement("div",null,"redirecting you...")}}}]);
+//# sourceMappingURL=component---src-pages-share-anything-site-index-tsx-6865e4b87639c990c4a5.js.map

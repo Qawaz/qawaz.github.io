@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunktimeline_site=self.webpackChunktimeline_site||[]).push([[591],{3130:function(e,t,n){function c(){const e=document.createElement("a");e.href="/",e.click()}n.r(t),n.d(t,{default:function(){return c}})}}]);
+//# sourceMappingURL=component---src-pages-share-anything-site-index-tsx-89e0f2461bb2456a5abd.js.map
