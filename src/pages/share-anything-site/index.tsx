@@ -1,5 +1,14 @@
+import React, {useEffect} from "react";
+
 export default function Main() {
-    const a = document.createElement("a")
-    a.href = "/"
-    a.click()
+    useEffect(() => {
+        const a = document.createElement("a")
+        a.href = "/"
+        a.click()
+    })
+    return (
+        <div>
+            redirecting you...
+        </div>
+    )
 }
