@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkqawaz_site=self.webpackChunkqawaz_site||[]).push([[218],{2513:function(e,n,t){t.r(n),t.d(n,{default:function(){return u}});var a=t(7294);function u(){return a.createElement("div",null,a.createElement("h1",null,"Can't find what you are looking for"))}}}]);
+//# sourceMappingURL=component---src-pages-404-tsx-bb11a67f1a0bbf1d5a9e.js.map

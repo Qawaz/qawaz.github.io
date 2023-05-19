@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkqawaz_site=self.webpackChunkqawaz_site||[]).push([[591],{3130:function(e,t,n){n.r(t),n.d(t,{default:function(){return u}});var c=n(7294);function u(){return(0,c.useEffect)((()=>{const e=document.createElement("a");e.href="/",e.click()})),c.createElement("div",null,"redirecting you...")}}}]);
+//# sourceMappingURL=component---src-pages-share-anything-site-index-tsx-dcae81f8934ccd9495c7.js.map
