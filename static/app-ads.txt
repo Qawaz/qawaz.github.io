@@ -1,3 +1,4 @@
 google.com, pub-7864431654199564, DIRECT, f08c47fec0942fa0
 smartadserver.com, 4194-OB, RESELLER, 060d053dcf45cbf3
 smartadserver.com, 4194, RESELLER, 060d053dcf45cbf3
+indexexchange.com, 205732, DIRECT, 50b1c356f2c5c8fc
